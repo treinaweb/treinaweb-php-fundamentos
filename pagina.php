@@ -13,7 +13,11 @@
 
     <p>Estou no curso de <?php echo "PHP"; ?></p>
 
+    <p>Estou no curso de <?= "PHP" ?></p>
+
     <p>10 mais 10 é igual a <?php echo 10 + 10; ?></p>
+
+    <p>10 mais 10 é igual a <?= 10 + 10 ?></p>
 
     <?php
         echo "minha linha 1 <br>";
