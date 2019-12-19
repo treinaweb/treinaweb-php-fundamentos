@@ -1,8 +1,11 @@
 <?php
 
 $escola = "Treinaweb";
-$curso = "PHP";
+$curso = ["PHP", "C#", "Java"];
 
 $frase = "Faça o curso de " . $curso . " na escola " . $escola;
 
-echo $frase;
+$string1 = "Faça o curso de {$curso[1]} na escola {$escola}";
+$string2 = 'Faça o curso de $curso na escola $escola';
+
+echo $string1;
