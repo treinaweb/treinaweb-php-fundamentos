@@ -11,7 +11,7 @@ $cursos = [
         "nome_curso" => "Curso de Java Fundamentos",
         "versao_ferramenta" => 11.4,
         "carga_horaria" => 30,
-        "status" => false
+        "status" => true
     ],
     "C#" => [
         "nome_curso" => "Curso de C# Fundamentos",
@@ -19,10 +19,21 @@ $cursos = [
         "carga_horaria" => 60,
         "status" => true
     ],
+    "javascript" => [
+        "nome_curso" => "Curso de Javascript Fundamentos",
+        "versao_ferramenta" => 11.4,
+        "carga_horaria" => 30,
+        "status" => false
+    ],
 ];
 
 
 foreach ($cursos as $curso) {
+
+    if ($curso['status'] == false) {
+        continue;
+    }
+
     echo $curso['nome_curso'];
     echo "<br>";
     echo "Versao da ferramenta: " . $curso['versao_ferramenta'];
