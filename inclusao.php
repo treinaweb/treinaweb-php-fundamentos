@@ -4,10 +4,10 @@ error_reporting(E_ALL);
 
 echo "inicio do arquivo inclusao.php<br>";
 
-include_once "variaveis.php";
+require_once "variaveis-1.php";
 echo "<br>";
 
-echo "<br>estou mostrando a variavel nome no arquivo inclusao.php: $nome"; 
+//echo "<br>estou mostrando a variavel nome no arquivo inclusao.php: $nome"; 
 
 include_once "funcoes/personalizadas.php";
 echo "<br>";
