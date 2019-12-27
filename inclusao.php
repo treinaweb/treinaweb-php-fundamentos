@@ -2,17 +2,13 @@
 
 error_reporting(E_ALL);
 
-echo "inicio do arquivo inclusao.php<br>";
+echo "inicio do arquivo inclusao.php";
 
-require_once "variaveis-1.php";
-echo "<br>";
+require_once "variaveis.php";
 
-//echo "<br>estou mostrando a variavel nome no arquivo inclusao.php: $nome"; 
+echo "<br>estou mostrando a variavel nome no arquivo inclusao.php: $nome"; 
 
 include_once "funcoes/personalizadas.php";
-echo "<br>";
-
-
 
 echo "<br>estou chamando a funcao somar no arquivo inclusao.php: " . somar(10, 10); 
 
